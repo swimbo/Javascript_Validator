@@ -1,20 +1,34 @@
 var userPhone = prompt("Please enter your phone number","e.g. 555-555-5555 P.S. We promise we won't spam you - that would suck for both of us!")
 
-// var isNumber = function(userPhone) {
-//   return !isNaN(parseFloat(userPhone)) && isFinite(userPhone)
-// }
-
-console.log(userPhone,isNumber)
-
-if(userPhone.length === 12 && userPhone.charAt(7) === "-" && userPhone.charAt(7) === "-") {
-    if (isNumber != "true"){
-      alert("Thank You!")
+  var phoneArray = userPhone.split("-")
+  var phoneString = phoneArray.join('')
+  var phoneArray2 = phoneString.split('')
+  var simple = userPhone.split('-').join('').split('')
+  var checker = for(var i = 0; i < simple.length; i++){
+      if(!isNaN(parseFloat(simple[i])) && isFinite(simple[i]))
+      console.log("true")
   }
-    else {
-      alert("Please enter a valid number in the correct format. Thank you!")
-  }
-}
+function checker(simple){}
+  // var number = parseFloat(phoneString)
+  // var isNumber = !isNaN(number)
+  // var isFinite = isFinite(number)
 
+
+// if(userPhone.length === 12 && userPhone.charAt(7) === "-" && userPhone.charAt(7) === "-") {
+//   var phoneArray = userPhone.split('-').join('').split('')
+//   isNumber(phoneString)
+//   if (true)
+//       alert("Thank You!")
+//   }
+//     else {
+//       alert("Please enter a valid number in the correct format. Thank you!")
+//   }
+//
+// function isNumber(phoneString) {
+//   for(var i = 0; i < phoneArray.length; i++){
+//     return(parseFloat(phoneArray[i]))
+//   return !isNaN(parseFloat(phoneArray)) && isFinite(phoneArray)
+//   }
 
 //
 // Resources
